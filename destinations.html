@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Destinations & Sail Times | Disney Cruise Line</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Montserrat', Arial, sans-serif;
+			background: #f4f8fb;
+			color: #222;
+		}
+		header {
+			background: linear-gradient(90deg, #005baa 60%, #00aaff 100%);
+			color: #fff;
+			padding: 0 0 10px 0;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+		}
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px 40px 10px 40px;
+		}
+		.logo {
+			font-size: 2rem;
+			font-weight: 700;
+			letter-spacing: 2px;
+			display: flex;
+			align-items: center;
+		}
+		.logo span {
+			color: #ffd700;
+			margin-left: 8px;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 18px;
+			font-weight: 500;
+			transition: color 0.2s;
+		}
+		nav a:hover {
+			color: #ffd700;
+		}
+		.hero {
+			background: url('https://disneycruise.disney.go.com/media/dcl_v2_destinations_hero_2x.jpg') center/cover no-repeat;
+			min-height: 320px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			padding: 60px 40px;
+			color: #fff;
+			position: relative;
+		}
+		.hero::after {
+			content: '';
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+			background: rgba(0, 40, 100, 0.45);
+			z-index: 1;
+		}
+		.hero-content {
+			position: relative;
+			z-index: 2;
+			max-width: 500px;
+		}
+		.hero h1 {
+			font-size: 2.4rem;
+			margin-bottom: 18px;
+			font-weight: 700;
+		}
+		.hero p {
+			font-size: 1.1rem;
+			margin-bottom: 28px;
+		}
+		.destinations {
+			padding: 50px 40px 30px 40px;
+			background: #fff;
+		}
+		.destinations h2 {
+			text-align: center;
+			font-size: 2rem;
+			margin-bottom: 36px;
+			color: #005baa;
+		}
+		.dest-table {
+			width: 100%;
+			max-width: 900px;
+			margin: 0 auto;
+			border-collapse: collapse;
+			background: #f4f8fb;
+			box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+			border-radius: 18px;
+			overflow: hidden;
+		}
+		.dest-table th, .dest-table td {
+			padding: 18px 14px;
+			text-align: left;
+		}
+		.dest-table th {
+			background: #005baa;
+			color: #fff;
+			font-size: 1.1rem;
+		}
+		.dest-table tr:nth-child(even) {
+			background: #eaf3fa;
+		}
+		.dest-table tr:hover {
+			background: #ffd70033;
+		}
+		@media (max-width: 900px) {
+			.navbar {
+				flex-direction: column;
+				gap: 10px;
+			}
+			.hero {
+				padding: 40px 10px;
+				min-height: 220px;
+			}
+			.destinations {
+				padding: 30px 5px 20px 5px;
+			}
+			.dest-table th, .dest-table td {
+				padding: 10px 6px;
+			}
+		}
+		footer {
+			background: #003366;
+			color: #fff;
+			text-align: center;
+			padding: 28px 10px 18px 10px;
+			font-size: 1rem;
+			margin-top: 40px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="navbar">
+			<div class="logo">Disney <span>Cruise</span></div>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="index.html#featured">Featured Cruises</a>
+				<a href="destinations.html">Destinations</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+	</header>
+	<section class="hero">
+		<div class="hero-content">
+			<h1>Explore Our Destinations</h1>
+			<p>Discover magical places around the world and see when you can set sail on your next Disney adventure.</p>
+		</div>
+	</section>
+	<section class="destinations" id="destinations">
+		<h2>Destinations & Sail Times</h2>
+		<table class="dest-table">
+			<thead>
+				<tr>
+					<th>Destination</th>
+					<th>Departure Port</th>
+					<th>Next Sail Date</th>
+					<th>Duration</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Caribbean</td>
+					<td>Port Canaveral, FL</td>
+					<td>March 10, 2026</td>
+					<td>7 Nights</td>
+				</tr>
+				<tr>
+					<td>Bahamas</td>
+					<td>Miami, FL</td>
+					<td>April 2, 2026</td>
+					<td>4 Nights</td>
+				</tr>
+				<tr>
+					<td>Alaska</td>
+					<td>Vancouver, BC</td>
+					<td>May 18, 2026</td>
+					<td>7 Nights</td>
+				</tr>
+				<tr>
+					<td>Mediterranean</td>
+					<td>Barcelona, Spain</td>
+					<td>June 5, 2026</td>
+					<td>7 Nights</td>
+				</tr>
+				<tr>
+					<td>Northern Europe</td>
+					<td>Copenhagen, Denmark</td>
+					<td>July 12, 2026</td>
+					<td>10 Nights</td>
+				</tr>
+				<tr>
+					<td>Transatlantic</td>
+					<td>Miami, FL</td>
+					<td>September 1, 2026</td>
+					<td>13 Nights</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<footer>
+		&copy; 2026 Disney Cruise Line | Official Website, All Rights Reserved.
+	</footer>
+</body>
+</html>
