@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Disney Cruise Line | Official Website</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Montserrat', Arial, sans-serif;
+			background: #f4f8fb;
+			color: #222;
+		}
+		header {
+			background: linear-gradient(90deg, #005baa 60%, #00aaff 100%);
+			color: #fff;
+			padding: 0 0 10px 0;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+		}
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px 40px 10px 40px;
+		}
+		.logo {
+			font-size: 2rem;
+			font-weight: 700;
+			letter-spacing: 2px;
+			display: flex;
+			align-items: center;
+		}
+		.logo span {
+			color: #ffd700;
+			margin-left: 8px;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 18px;
+			font-weight: 500;
+			transition: color 0.2s;
+		}
+		nav a:hover {
+			color: #ffd700;
+		}
+		.hero {
+			background: url('https://disneycruise.disney.go.com/media/dcl_v2_hp_hero_2x.jpg') center/cover no-repeat;
+			min-height: 420px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			padding: 60px 40px;
+			color: #fff;
+			position: relative;
+		}
+		.hero::after {
+			content: '';
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+			background: rgba(0, 40, 100, 0.45);
+			z-index: 1;
+		}
+		.hero-content {
+			position: relative;
+			z-index: 2;
+			max-width: 500px;
+		}
+		.hero h1 {
+			font-size: 2.8rem;
+			margin-bottom: 18px;
+			font-weight: 700;
+		}
+		.hero p {
+			font-size: 1.2rem;
+			margin-bottom: 28px;
+		}
+		.hero button {
+			background: #ffd700;
+			color: #005baa;
+			border: none;
+			padding: 14px 32px;
+			font-size: 1.1rem;
+			font-weight: 700;
+			border-radius: 30px;
+			cursor: pointer;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+			transition: background 0.2s;
+		}
+		.hero button:hover {
+			background: #fff;
+			color: #005baa;
+		}
+		.featured {
+			padding: 50px 40px 30px 40px;
+			background: #fff;
+		}
+		.featured h2 {
+			text-align: center;
+			font-size: 2rem;
+			margin-bottom: 36px;
+			color: #005baa;
+		}
+		.cruise-cards {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 32px;
+			justify-content: center;
+		}
+		.card {
+			background: #f4f8fb;
+			border-radius: 18px;
+			box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+			overflow: hidden;
+			width: 320px;
+			transition: transform 0.2s;
+		}
+		.card:hover {
+			transform: translateY(-8px) scale(1.03);
+		}
+		.card img {
+			width: 100%;
+			height: 180px;
+			object-fit: cover;
+		}
+		.card-body {
+			padding: 20px 18px 24px 18px;
+		}
+		.card-title {
+			font-size: 1.2rem;
+			font-weight: 700;
+			margin-bottom: 10px;
+			color: #005baa;
+		}
+		.card-text {
+			font-size: 1rem;
+			margin-bottom: 14px;
+		}
+		.card button {
+			background: #005baa;
+			color: #fff;
+			border: none;
+			padding: 10px 22px;
+			font-size: 1rem;
+			border-radius: 20px;
+			cursor: pointer;
+			font-weight: 600;
+			transition: background 0.2s;
+		}
+		.card button:hover {
+			background: #ffd700;
+			color: #005baa;
+		}
+		footer {
+			background: #003366;
+			color: #fff;
+			text-align: center;
+			padding: 28px 10px 18px 10px;
+			font-size: 1rem;
+			margin-top: 40px;
+		}
+		@media (max-width: 900px) {
+			.cruise-cards {
+				flex-direction: column;
+				align-items: center;
+			}
+			.navbar {
+				flex-direction: column;
+				gap: 10px;
+			}
+			.hero {
+				padding: 40px 10px;
+				min-height: 320px;
+			}
+			.featured {
+				padding: 30px 10px 20px 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="navbar">
+			<div class="logo">Disney <span>Cruise</span></div>
+			<nav>
+				<a href="#">Home</a>
+				<a href="#featured">Featured Cruises</a>
+				<a href="destinations.html">Destinations</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+	<section class="hero">
+		<div class="hero-content">
+			<h1>Set Sail on a Magical Adventure</h1>
+			<p>Experience the wonder of Disney at sea. Explore breathtaking destinations, world-class entertainment, and unforgettable family fun aboard our award-winning ships.</p>
+			<button>Book Your Cruise</button>
+		</div>
+	</section>
+	<section class="featured" id="featured">
+		<h2>Featured Cruises</h2>
+		<div class="cruise-cards">
+			<div class="card">
+				<img src="https://disneycruise.disney.go.com/media/dcl_v2_dest_caribbean_2x.jpg" alt="Caribbean Cruise">
+				<div class="card-body">
+					<div class="card-title">Caribbean Adventure</div>
+					<div class="card-text">Sail to tropical islands, enjoy turquoise waters, and discover the magic of the Caribbean with Disney.</div>
+					<button>View Details</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://disneycruise.disney.go.com/media/dcl_v2_dest_europe_2x.jpg" alt="Europe Cruise">
+				<div class="card-body">
+					<div class="card-title">European Explorer</div>
+					<div class="card-text">Journey through the Mediterranean, visit iconic cities, and experience Disney magic across Europe.</div>
+					<button>View Details</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://disneycruise.disney.go.com/media/dcl_v2_dest_alaska_2x.jpg" alt="Alaska Cruise">
+				<div class="card-body">
+					<div class="card-title">Alaskan Wonders</div>
+					<div class="card-text">Explore glaciers, wildlife, and breathtaking scenery on an unforgettable Alaskan Disney cruise.</div>
+					<button>View Details</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		&copy; 2026 Disney Cruise Line | Official Website, All Rights Reserved.
+	</footer>
+</body>
+</html>
